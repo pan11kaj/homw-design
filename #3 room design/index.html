@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Design</title>
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+</head>
+<style>
+    h1{
+        color:red;
+        animation:text;
+    }
+
+</style>
+<body>
+    <h1 >**PANKAJ's DESIGN**</h1>
+    <a-scene>
+        <a-entity>
+            <a-camera></a-camera>
+        </a-entity>
+        <a-sky src="sky.jpg"></a-sky>
+        <a-entity>
+           <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" src="floor.jpg" shadow></a-plane>
+           <a-plane position="0 1 -5" src="f2.jpg" scale="4 4 2"></a-plane>
+           <a-plane position="0 0 -3.6" rotation="-90 0 0" width="4" height="4" src="farsh.jpg" scale="0.6 0.5"></a-plane>
+        <a-cylinder position="0 0 -3.4" src="components/bamboo.jpg" scale="1 0.5" radius="0.5"></a-cylinder>
+        <a-cylinder position="-1 0 -3.4" src="components/OIP.jpg" scale="0.5 0.5" radius="0.5"></a-cylinder>
+        <a-cylinder position="1 0 -3.4" src="components/OIP.jpg" scale="0.5 0.5" radius="0.5"></a-cylinder>
+        
+    </a-entity>
+    </a-scene>
+</body>
+</html>
